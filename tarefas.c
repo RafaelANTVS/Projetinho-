@@ -13,6 +13,7 @@ Erro criar(Tarefa t[], int *pos) {
   printf("Entre com a descricao: ");
   fgets(t[*pos].descricao, 300, stdin);
   clearBuffer();
+//  t[pos] Descricao[stros]
 
   printf("Entre com a categoria: ");
   fgets(t[*pos].categoria, 100, stdin);
@@ -43,7 +44,7 @@ Erro deletar(Tarefa t[], int *pos) {
 
   return OK;
 }
-Erro listar(Tarefa t[], int pos) {
+Erro listar(Tarefa t[], int *pos) {
   if (pos == 0)
     return SEM_TAREFAS;
 
